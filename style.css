@@ -1,0 +1,66 @@
+body{
+    margin: 0%;
+    background-color: #fff;
+}
+#a{
+    width: 100vw;
+    height: 87vh;
+    background-color: cornflowerblue;
+}
+#a>a{
+    transition: background-color 300ms;
+    background-color: transparent;
+}
+#a>a:hover{
+    background-color: black;
+}
+footer
+ {
+     width: 100vw;
+     height: 13vh;
+     position: fixed;
+     bottom: 0ch;
+ }
+ .xlink{
+     color: rgb(142, 142, 142);
+     font-size: 12px;
+     margin-right: 1.2em;
+ }
+ .xlink-container{
+     text-align: center;
+     
+ }
+ .locale-menu{
+     color: rgb(142, 142, 142);
+     border: none;
+     outline: none;
+     cursor: pointer;
+     margin-right: 1em
+ }
+ .copyright{
+     margin-top: 12px;
+
+ }
+ .iphone-area{
+     background-color: tomato;
+ }
+ .iphone{
+     width: 21vw;
+     height: 28.8vw;
+    background-color: slateblue;
+ }
+ .login-area{
+    
+     background-color:skyblue ;
+ }
+ .a{
+     border: 1px solid black;
+     width: 50vw;
+     height: 75vh;
+     position: relative;
+     left: 20vw;
+     top: 7vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    
+ }

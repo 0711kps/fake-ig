@@ -1,0 +1,330 @@
+header{
+  border-bottom: solid #ddd 1px;
+  height: 3.3rem;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: white;
+}
+.header-content{
+    width: 62rem;
+    margin: 0 auto;
+    
+}
+.logo{
+    width: 8rem;
+    height: 1.9rem;
+    background-image: url("/public/instagram.png");
+    margin-right: 15rem;
+    margin-top: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#search-field{
+    text-align: center; 
+    margin-right: 4vw;
+    width: 13rem;
+    height: 1.5rem;
+    transform: translateY(-1rem);
+    background-color: rgb(250, 250, 250);
+    border: 1px solid #ddd;
+    color: #222;    
+}
+#search-field::placeholder{
+    color: #888;
+}
+.search-icon{
+    display: inline-block;
+    transform: translate(-13rem, -1rem);
+    font-size: 0.5rem;
+    color: #888;
+    font-weight: bold;
+}
+nav{
+    display: inline-block;
+}
+.li-icon{
+    font-size: 1.7rem;
+    display: inline-block;
+    margin: 0 .3rem;
+    transform: translateY(-0.7rem);
+    cursor: pointer;
+    transition: color 200ms, transform 200ms;
+}   
+/* hover=游標滑過 */
+.li-icon:hover{
+    color: rgb(150, 193, 250);    
+}
+/* active=滑鼠按下的狀態 */
+.li-icon:active{
+    transform: translateY(-0.7rem) scale(1.2);
+}
+#avatar{
+    border: #888 solid 1px;
+    border-radius: 100%;
+    padding: 0.3rem 0.2rem 0.1rem 0.2rem;
+}
+main{
+    width: 62rem;
+    margin: 0 auto;
+}
+.user-content{
+    width: 38rem;
+    margin: 5.2rem 0 7rem 2rem;
+}
+.stories-outer-container{
+    width: 38rem;
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+.stories{
+    height: 100px;
+    padding: 8px 0;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 4em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+}
+.story{
+    display: inline-block;
+}
+.story-avatar-outer{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background: linear-gradient(45deg, orange, purple);
+    cursor: pointer;
+}
+.story-avatar-inner{
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: white;
+    border-radius: 100%;
+    transform: translate(0.2rem,0.2rem);
+    background-size: contain;
+    background-position: center;
+}
+.story-username{
+    font-size: 1rem;
+    width: 4rem;
+    text-align: center;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+.post{
+    border: 1px #ccc solid;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+.post-header{
+    height: 3.2rem;
+    border-bottom: 1px #ddd solid;
+}
+.post-header>div{
+    display: inline-block;
+}
+.header-avatar{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin: 0.6rem 1rem 0.6rem 0.6rem;
+    border: 1px solid gray;
+    background-size: contain;
+    background-position: center;
+}
+.header-user-account{
+    margin-right: 25rem;
+    transform: translateY(-1.2rem);
+    font-weight: bold;
+}
+.header-menu{
+    font-size: 1.5rem;
+    display: inline-block;
+    transform: translateY(-1rem);
+}
+.post-image{
+    width: 38rem;
+    min-height: 30rem;
+    border-bottom: 1px #ddd solid;
+    background-size: cover;
+}
+.post-action{
+    height: 2.6rem;
+    padding: 0.8rem 0.8rem 0 0.8rem;
+}
+.post-action>i{
+    font-size: 1.8rem;
+    text-shadow: 0 0 2px black;
+    color: white;
+    cursor: pointer;
+}
+.post-action>i.share-post{
+    margin-right: 27.5rem;
+}
+.like-post{
+    transition:color 200ms, text-shadow 200ms;
+}
+.like-post:active{
+    color: tomato;
+    text-shadow: 0 0 2px tomato;
+}
+.post-views-or-likes{
+    height: 1rem;
+    font-weight: bold;
+    margin-left: 0.8rem;
+    margin-bottom: 1rem;
+}
+.post-comment{
+    min-height: 2.2rem;
+    border-bottom: 1px #ddd solid;
+    padding-left: 0.7rem;
+}
+.comment-user-account{
+    font-weight: bold;
+}
+.comment{
+    margin-bottom: 0.1rem;
+}
+.hashtag{
+    color: steelblue;
+    text-decoration: none;
+}
+.post-reply{
+    height: 3rem;
+}
+i.reply-emoji, input.reply-field, a.repy-send{
+    display: inline-block;
+}
+i.reply-emoji{
+    font-size: 1.5rem;
+    margin: 0.8rem;
+    color: #333;
+    cursor: pointer;
+}
+input.reply-field{
+    width: 31rem;
+    border: none;
+    outline: none;
+}
+a.reply-send{
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+}
+.side-content{
+    position: fixed;
+    width: 20rem;
+    left: calc(52vw + 8rem);
+    top: 6rem;
+}
+.account-switch, .friends-suggestion, footer{
+    margin-bottom: 1em;
+}
+.account-switch{
+    height: 4.5rem;
+}
+.switch-avatar{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border: #888 solid 1px;
+    border-radius: 100%;
+    padding: 0.3rem 0.2rem 0.1rem 0.2rem;
+    display: inline-block;
+}
+.switch-info{
+    width: 13rem;
+    height: 3rem;
+    display: inline-block;
+}
+.switch-user-account{
+    font-weight: bold;
+}
+.switch-user-name{
+    color: #888;
+}
+.switch-label{
+    text-decoration: none;
+    color: steelblue;
+    font-weight: bold;
+    display: inline-block;
+}
+.friends-suggestion{
+    height: 16.5rem;   
+}
+.suggestion-header{
+    width: 20rem;
+    margin-bottom: 1em;
+}
+.suggestion-label{
+    width: 15rem;
+    display: inline-block;
+    color: #888;
+    font-weight: bold;
+}
+.suggestion-expand{
+    display:inline-block;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.candidate-avatar, .candidate-info, .candidate-label{
+    display: inline-block;
+}
+.suggestion{
+    margin-bottom: .6rem;
+}
+.suggestion:nth-of-type(2n)>.candidate-avatar{
+    color: lightcoral;
+}
+.suggestion:nth-of-type(2n+1)>.candidate-avatar{
+    color: darkorange;
+}
+.candidate-avatar{
+    margin-right: 1rem;
+}
+.candidate-info{
+    width: 14rem;
+}
+.candidate-account, .candidate-status{
+    font-size: .7rem;
+}
+.candidate-account{
+    font-weight: bold;
+}
+.candidate-status{
+    color: #888;
+}
+.candidate-label{
+    color: steelblue;
+    font-weight: bold;
+}
+footer{
+    height: 5.5rem;
+}
+.related-link{
+    margin-bottom: 0.5rem;
+}
+.related-link>a{
+    color: #ccc;
+    font-size: 0.5rem;
+    text-decoration: none;
+    margin: 0 .1rem;
+    /* 文字斷行方式 */
+    word-break: keep-all;
+}
+.copy-right{
+    color: #ccc;
+    font-size: 0.5rem;
+}

@@ -1,0 +1,160 @@
+body{
+    margin: 0%;
+    background-color: #fff;
+}
+
+footer
+ {
+     width: 100vw;
+     height: 13vh;
+     position: fixed;
+     bottom: 0ch;
+ }
+ .xlink{
+     color: rgb(142, 142, 142);
+     font-size: 12px;
+     margin-right: 1.2em;
+ }
+ .xlink-container{
+     text-align: center;
+     
+ }
+ .locale-menu{
+     color: rgb(142, 142, 142);
+     border: none;
+     outline: none;
+     cursor: pointer;
+     margin-right: 1em
+ }
+ .copyright{
+     margin-top: 12px;
+
+ }                 
+ .iphone-area{
+     
+ }
+ .iphone{
+     width: 21vw;
+     height: 28.8vw;
+     transform: translate(calc((25vw - 21vw) / 2),calc((75vh - 28.8vw) / 2));
+     background-image: url("/public/phone.png");
+     background-size: contain;
+    
+ }
+ 
+ .login-area{
+    display: inline-block;
+    margin-top: 37.5vh;
+    transform: translateY(-50%);
+     
+ }
+ .iphone-screen {
+    width: 11vw;
+    height: 19.7vw;
+    transform: translate(7vw, 4.6vw);
+    background-image: url("/public/carousel1.jpg");
+    background-size: contain;
+}
+a{
+    text-decoration: none;
+}
+ .a{
+     width: 50vw;
+     height: 75vh;
+     position: relative;
+     left: 20vw;
+     top: 7vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    
+ }
+ .login-field{
+     display: block;
+     background-color: rgb(250, 250, 250);
+     border: none;
+     outline: solid 1px #bbb;
+     padding: .7em;
+     font-size: .8em;
+     margin: 0 auto .4em auto;
+     width: 25vw;
+     max-width: 280px;
+     transition: background-color 300ms;
+ }
+ a.login-field{
+     background-color: skyblue;
+     color: snow;
+     border-radius: 2px;
+     outline: none;
+     margin: 1em auto;
+ }
+ a.login-field.pass-verify{
+    background-color: dodgerblue;
+} 
+ input.login-field:focus-visible{
+     outline: solid 1px #888;
+     background-color: rgb(248, 249, 252);
+ }
+ .login-subarea{
+     background-color: white;
+     border: 1px solid #bbb;
+     padding: 1em;
+     margin-bottom: 1em;
+     text-align: center;
+ }
+.login-or{
+    text-align: center;
+    margin: .5em auto 1em auto;
+}
+.login-or>hr{
+    display: inline-block;
+    width: 9vw;
+}
+.login-or>span{
+    display: inline-block;
+    margin: 0 1vw;
+}
+.fblogin-link{
+    color: #385185;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.forget-password{
+    color: #00376b;
+    font-size: .3em;
+}
+.ig-logo{
+    width: 16.8vmin;
+    height: 4.9vmin;
+    background-image: url("/public/instagram.png");
+    margin: 0  auto 1em auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fb-logo{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/public/sprite.png");
+    background-position: -414px -259px;
+}
+.dl-store-link{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.store-logos{
+    margin: 0 auto;
+    width: fit-content;
+}
+.store-logo{
+    width: 10vw;
+    height: 3vw;
+    display: inline-block;
+    margin-right: .4em;
+    background-size: contain;
+}
+#app-store-link{
+    background-image: url("/public/app-store.png");
+}
+#google-play-link{
+    background-image: url("/public/google-play.png");
+}
